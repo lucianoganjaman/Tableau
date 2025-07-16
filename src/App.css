@@ -1,0 +1,94 @@
+/* App.css */
+
+/* Styles généraux */
+.app-container {
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+}
+
+.main-title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Styles pour les sections */
+.table-section {
+  margin-bottom: 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-section h2 {
+  background-color: #3498db;
+  color: white;
+  padding: 15px 20px;
+  margin: 0;
+  font-size: 1.4em;
+}
+
+/* Styles pour les tables */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.data-table thead {
+  background-color: #2980b9;
+  color: white;
+}
+
+.data-table th, .data-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.data-table tbody tr:hover {
+  background-color: #e9f7fe;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+  
+  .data-table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .main-title {
+    font-size: 1.8em;
+  }
+  
+  .table-section h2 {
+    font-size: 1.2em;
+    padding: 10px 15px;
+  }
+  
+  .data-table th, .data-table td {
+    padding: 8px 10px;
+  }
+}
